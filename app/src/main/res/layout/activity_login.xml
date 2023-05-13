@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".auth.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:background="@color/light_red" />
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/login_bg"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-80dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/enter_your_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nunito_sans_bold"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/enter_your_password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/nunito_sans_bold"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/color_secondary"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:cornerRadius="8dp"
+                    app:elevation="10dp"
+                    android:fontFamily="@font/nunito_sans_bold"/>
+
+                <TextView
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/don_t_have_an_account"
+                    android:textColor="@color/light_grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nunito_sans_bold"/>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

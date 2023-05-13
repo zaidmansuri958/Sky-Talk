@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.VideoActivity">
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dial"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/online"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:padding="10dp"
+        android:text="start call"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:cornerRadius="15dp"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/audio"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/normal_audio"
+        app:layout_constraintRight_toLeftOf="@id/dial"
+        app:layout_constraintTop_toTopOf="@id/dial" />
+
+    <ImageView
+        android:id="@+id/video"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/normal_video"
+        app:layout_constraintLeft_toRightOf="@id/dial"
+        app:layout_constraintTop_toTopOf="@id/dial" />
+
+    <LinearLayout
+        android:id="@+id/call_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_second"
+        android:padding="20dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/caller_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.2"
+            android:backgroundTint="@color/online"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:padding="10dp"
+            android:text="@string/accept"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_reject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:backgroundTint="@color/offline"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:padding="10dp"
+            android:text="@string/reject"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Sky Talk</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Say Hello to Your Loved Ones with Our High-Quality Video Call App</string>
+    <string name="join_now">JOIN NOW</string>
+    <string name="let_s_know_you">Let\'s Know You</string>
+    <string name="please_provide_all_the_details">Please Provide All the details</string>
+    <string name="please_select_profile_image">Please select profile image *</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="sing_up">Sing up</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account</string>
+    <string name="enter_your_number">Enter your number</string>
+    <string name="send_otp">send otp</string>
+    <string name="enter_opt">Enter OPT</string>
+    <string name="verify">Verify</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="logout">Logout</string>
+    <string name="loading">Loading....</string>
+    <string name="call">call</string>
+</resources>
